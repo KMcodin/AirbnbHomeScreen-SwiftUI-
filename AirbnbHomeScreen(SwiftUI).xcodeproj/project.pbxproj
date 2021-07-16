@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A508B3226A1F5B300130457 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A508B3126A1F5B300130457 /* MainView.swift */; };
+		5A508B3426A1F7EA00130457 /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A508B3326A1F7EA00130457 /* WishlistView.swift */; };
+		5A508B3626A1F7FC00130457 /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A508B3526A1F7FC00130457 /* TripsView.swift */; };
+		5A508B3826A1F81400130457 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A508B3726A1F81400130457 /* InboxView.swift */; };
+		5A508B3A26A1F82200130457 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A508B3926A1F82200130457 /* ProfileView.swift */; };
 		5A7C1605268BEE6100BE40D8 /* AirbnbHomeScreen_SwiftUI_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C1604268BEE6100BE40D8 /* AirbnbHomeScreen_SwiftUI_App.swift */; };
 		5A7C1607268BEE6100BE40D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C1606268BEE6100BE40D8 /* ContentView.swift */; };
 		5A7C1609268BEE6500BE40D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A7C1608268BEE6500BE40D8 /* Assets.xcassets */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A508B3126A1F5B300130457 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5A508B3326A1F7EA00130457 /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
+		5A508B3526A1F7FC00130457 /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
+		5A508B3726A1F81400130457 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		5A508B3926A1F82200130457 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5A7C1601268BEE6100BE40D8 /* AirbnbHomeScreen(SwiftUI).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AirbnbHomeScreen(SwiftUI).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7C1604268BEE6100BE40D8 /* AirbnbHomeScreen_SwiftUI_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbHomeScreen_SwiftUI_App.swift; sourceTree = "<group>"; };
 		5A7C1606268BEE6100BE40D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,7 +65,12 @@
 			isa = PBXGroup;
 			children = (
 				5A7C1604268BEE6100BE40D8 /* AirbnbHomeScreen_SwiftUI_App.swift */,
+				5A508B3126A1F5B300130457 /* MainView.swift */,
 				5A7C1606268BEE6100BE40D8 /* ContentView.swift */,
+				5A508B3326A1F7EA00130457 /* WishlistView.swift */,
+				5A508B3526A1F7FC00130457 /* TripsView.swift */,
+				5A508B3726A1F81400130457 /* InboxView.swift */,
+				5A508B3926A1F82200130457 /* ProfileView.swift */,
 				5A7C1613268CCF2F00BE40D8 /* PictureTextButton.swift */,
 				5A7C1608268BEE6500BE40D8 /* Assets.xcassets */,
 				5A7C160D268BEE6500BE40D8 /* Info.plist */,
@@ -141,8 +156,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A508B3A26A1F82200130457 /* ProfileView.swift in Sources */,
 				5A7C1614268CCF2F00BE40D8 /* PictureTextButton.swift in Sources */,
+				5A508B3226A1F5B300130457 /* MainView.swift in Sources */,
 				5A7C1607268BEE6100BE40D8 /* ContentView.swift in Sources */,
+				5A508B3826A1F81400130457 /* InboxView.swift in Sources */,
+				5A508B3626A1F7FC00130457 /* TripsView.swift in Sources */,
+				5A508B3426A1F7EA00130457 /* WishlistView.swift in Sources */,
 				5A7C1605268BEE6100BE40D8 /* AirbnbHomeScreen_SwiftUI_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

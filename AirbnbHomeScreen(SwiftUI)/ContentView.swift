@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var searchText = ""
+    
     var body: some View {
         ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false, content: {
-            VStack{
+            VStack(alignment: .leading) {
+                ZStack {
+                    Rectangle()
+                        .foregroundColor(Color.gray)
+                    HStack {
+                        Image(systemName: "magnifyingglass")
+                        TextField("Where are you going?", text: $searchText)
+                    }
+                    .foregroundColor(.white)
+                    .padding()
+                }.frame(height: 40)
+                .cornerRadius(25)
+                .padding()
                 Text("Explore Nearby")
-                    .font(.title)
+                    .font(.title2)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
                     .lineLimit(1)
@@ -137,7 +151,7 @@ struct ContentView: View {
                 .padding([.leading, .bottom])
                 Spacer()
                 Text("Live anywhere")
-                    .font(.title)
+                    .font(.title2)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
                     .lineLimit(1)
@@ -190,17 +204,25 @@ struct ContentView: View {
                 }
                 ).padding([.top, .leading])
                 
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    VStack{
-                        Text("Try hosting")
-                            .foregroundColor(.white)
-                        Image("host-your-home")
-                            .resizable()
-                    }
-                })
-                .overlay(RoundedRectangle(cornerRadius: 25.0))
-                .padding(.horizontal)
+//                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+//                    ZStack{
+//                        Image("host-your-home")
+//                    }
+//                })
             }
+            Spacer()
+            Text("Discover Experiences")
+                .font(.title2)
+                .fontWeight(.bold)
+                .multilineTextAlignment(.leading)
+                .lineLimit(1)
+                .padding([.top, .leading])
+                .frame(width: 392, height: 30, alignment: .leading)
+            Text("Unique activities with local experts--inperson or online.")
+                .multilineTextAlignment(.leading)
+                .padding(.horizontal)
+            Spacer()
+            
         }
         )
     }
